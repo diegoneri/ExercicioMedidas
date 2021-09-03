@@ -49,9 +49,9 @@ namespace ExercicioMedidas
             Console.WriteLine("");
             Console.WriteLine($"{Metros} m");
             Console.WriteLine("");
-            Console.WriteLine($"{Rcm} Cm");
-            Console.WriteLine("");
             Console.WriteLine($"{Rkm} Km");
+            Console.WriteLine("");
+            Console.WriteLine($"{Rcm} Cm");
             Console.WriteLine("");
             Console.WriteLine("--------------------------");
 
