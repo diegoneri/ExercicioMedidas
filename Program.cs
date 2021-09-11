@@ -9,6 +9,8 @@ namespace ExercicioMedidas
 
             Console.Clear();
             //Falar para o usuario sobre o programa
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.Gray;
             Console.WriteLine("--- Conversor de Metros para Km ---");
             // pedir para ele digitar quantos metros que ele quer converter
             Console.WriteLine("");
@@ -30,7 +32,7 @@ namespace ExercicioMedidas
             Decimal Y = 100;
             Decimal Rcm = Mdigt * Y;
             //apagar
-            Console.ReadKey();            
+            Console.ReadKey();
             Console.Clear();
             //mostrar metros e a conversao para cm
             Console.WriteLine("--- Conversão para Centimetros ---");
@@ -40,25 +42,26 @@ namespace ExercicioMedidas
             Console.WriteLine($"Centimetros: {Rcm} Cm");
 
             //apagar
-            Console.ReadKey();            
+            Console.ReadKey();
             Console.Clear();
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.Gray;
             //mostrar o resultado
             Console.WriteLine("--------------------------");
             Console.WriteLine("--------Resultado---------");
             Console.WriteLine("--------------------------");
             Console.WriteLine("");
-            Console.WriteLine($"{Metros} m");
+            Console.WriteLine($" {Metros} m");
             Console.WriteLine("");
-            Console.WriteLine($"{Rkm} Km");
+            Console.WriteLine($" {Rkm} Km");
             Console.WriteLine("");
-            Console.WriteLine($"{Rcm} Cm");
+            Console.WriteLine($" {Rcm} Cm");
             Console.WriteLine("");
             Console.WriteLine("--------------------------");
 
             Console.ReadKey();
+            Console.ResetColor();
             Console.Clear();
-
-
 
 
 
