@@ -14,7 +14,7 @@ namespace ExercicioMedidas
             Console.WriteLine("--- Conversor de Metros para Km ---");
             // pedir para ele digitar quantos metros que ele quer converter
             Console.WriteLine("");
-            Console.Write("Digite...: ");
+            Console.Write("Digite o valor...: ");
             string Metros = Console.ReadLine();
             //apagar
             Console.Clear();
@@ -27,7 +27,7 @@ namespace ExercicioMedidas
             Decimal X = 1000;
             Decimal Rkm = Mdigt / X;
             //mostrar o resultado
-            Console.WriteLine($"Kilometros: {Rkm} Km");
+            Console.WriteLine($"Kilometros: {Rkm:N2} Km");
             //Converter para centimetros * 100
             Decimal Y = 100;
             Decimal Rcm = Mdigt * Y;
@@ -37,9 +37,9 @@ namespace ExercicioMedidas
             //mostrar metros e a conversao para cm
             Console.WriteLine("--- Conversão para Centimetros ---");
             Console.WriteLine("");
-            Console.WriteLine($"Metros...: {Metros} m");
+            Console.WriteLine($"Metros...: {Mdigt:N2} m");
             Console.WriteLine("");
-            Console.WriteLine($"Centimetros: {Rcm} Cm");
+            Console.WriteLine($"Centimetros: {Rcm:N2} Cm");
 
             //apagar
             Console.ReadKey();
@@ -51,21 +51,17 @@ namespace ExercicioMedidas
             Console.WriteLine("--------Resultado---------");
             Console.WriteLine("--------------------------");
             Console.WriteLine("");
-            Console.WriteLine($" {Metros} m");
+            Console.WriteLine($" {Mdigt:N2} m");
             Console.WriteLine("");
-            Console.WriteLine($" {Rkm} Km");
+            Console.WriteLine($" {Rkm:N2} Km");
             Console.WriteLine("");
-            Console.WriteLine($" {Rcm} Cm");
+            Console.WriteLine($" {Rcm:N2} Cm");
             Console.WriteLine("");
             Console.WriteLine("--------------------------");
 
             Console.ReadKey();
             Console.ResetColor();
             Console.Clear();
-
-
-
-
 
         }
     }
